@@ -1,6 +1,7 @@
 {
   "name": "base-usdc-staking",
   "version": "1.0.0",
+  "homepage": "https://smartusdc.github.io/react-baseusdc/",
   "private": true,
   "dependencies": {
     "@web3modal/ethereum": "^2.7.1",
