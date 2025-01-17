@@ -27,15 +27,17 @@
     "tailwindcss": "^3.3.5",
     "typescript": "^5.3.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint src --ext .ts,.tsx",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "prepare": "husky install"
-  },
+ "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "lint": "eslint src --ext .ts,.tsx",
+  "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+  "prepare": "husky install"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
